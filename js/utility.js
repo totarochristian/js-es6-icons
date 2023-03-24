@@ -44,11 +44,18 @@ function ApplyFilters(){
     }
 }
 
+/** Function used to search the value wroted in the search input element.
+ *  First will apply the filters selected by the user.
+ */
 function SearchElements(){
+    //If no filter is selected, will reset the visibility of all the elements
+    // otherwise will make the first filtering of the elements.
     ApplyFilters();
     let searchWord = document.getElementById("txtSearch").value;
     for(let i=0; i<icons.length; i++){
+        //If the card is visible and the word searched isn't empty
         if(!iconsArray[i].classList.contains("d-none") && searchWord){
+            //if the name not includes the word to search, make it not visible
             if(!icons[i].name.includes(searchWord))
                 iconsArray[i].classList.add("d-none");
         }
