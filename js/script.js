@@ -48,6 +48,7 @@ const icons = [
         name: 'cat',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -55,6 +56,7 @@ const icons = [
         name: 'crow',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -62,6 +64,7 @@ const icons = [
         name: 'dog',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -69,6 +72,7 @@ const icons = [
         name: 'dove',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -76,6 +80,7 @@ const icons = [
         name: 'dragon',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -83,6 +88,7 @@ const icons = [
         name: 'horse',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -90,6 +96,7 @@ const icons = [
         name: 'hippo',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -97,6 +104,7 @@ const icons = [
         name: 'fish',
         prefix: 'fa-',
         type: 'animal',
+        typeIT: 'Animali',
         family: 'solid',
         color: 'orange'
     },
@@ -104,6 +112,7 @@ const icons = [
         name: 'carrot',
         prefix: 'fa-',
         type: 'vegetable',
+        typeIT: 'Vegetali',
         family: 'solid',
         color: 'green'
     },
@@ -111,6 +120,7 @@ const icons = [
         name: 'apple-alt',
         prefix: 'fa-',
         type: 'vegetable',
+        typeIT: 'Vegetali',
         family: 'solid',
         color: 'green'
     },
@@ -118,6 +128,7 @@ const icons = [
         name: 'lemon',
         prefix: 'fa-',
         type: 'vegetable',
+        typeIT: 'Vegetali',
         family: 'solid',
         color: 'green'
     },
@@ -125,6 +136,7 @@ const icons = [
         name: 'pepper-hot',
         prefix: 'fa-',
         type: 'vegetable',
+        typeIT: 'Vegetali',
         family: 'solid',
         color: 'green'
     },
@@ -132,6 +144,7 @@ const icons = [
         name: 'user-astronaut',
         prefix: 'fa-',
         type: 'user',
+        typeIT: 'Utenti',
         family: 'solid',
         color: 'blue'
     },
@@ -139,6 +152,7 @@ const icons = [
         name: 'user-graduate',
         prefix: 'fa-',
         type: 'user',
+        typeIT: 'Utenti',
         family: 'solid',
         color: 'blue'
     },
@@ -146,6 +160,7 @@ const icons = [
         name: 'user-ninja',
         prefix: 'fa-',
         type: 'user',
+        typeIT: 'Utenti',
         family: 'solid',
         color: 'blue'
     },
@@ -153,6 +168,7 @@ const icons = [
         name: 'user-secret',
         prefix: 'fa-',
         type: 'user',
+        typeIT: 'Utenti',
         family: 'solid',
         color: 'blue'
     }
