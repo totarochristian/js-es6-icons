@@ -1,16 +1,16 @@
+/** Function used to initialize the elements in the main of index page. */
 function Initialize() {
-    icons.forEach(function (p) {
-        iconsArray.push(AddCard(p));
+    icons.forEach(function (el) {
+        iconsArray.push(AddCard(el));
     });
 }
 
+/**
+ * Function used to add a single card in the card container and return the node card.
+ * @param {*} elem Data of the element to add in the card container
+ * @returns Card created and added in the card container
+ */
 function AddCard(elem){
-    // <div class="card">
-    //     <h2 class="card-header fa-solid fa-cat"></h2>
-    //     <div class="card-body">
-    //         <h6 class="card-title">Cat</h6>
-    //     </div>
-    // </div>
     const card = document.createElement("div");
     card.classList.add("card");
     const h2 = document.createElement("h2");
