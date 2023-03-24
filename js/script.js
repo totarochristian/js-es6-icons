@@ -156,5 +156,5 @@ const icons = [
         color: 'blue'
     }
 ];
-
+let iconsArray = [];
 window.addEventListener("load", Initialize);
