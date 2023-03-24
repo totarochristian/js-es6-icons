@@ -71,6 +71,10 @@ function SearchElements(){
     }
 }
 
+/**
+ * Function used to generate a random color.
+ * @returns Color generated randomly
+ */
 function GenerateRandomColor(){
     let generatedColor = '#';
     for(let i=0; i<6; i++)
@@ -90,6 +94,11 @@ function GetRandomInt(max,min) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+/**
+ * Function used to convert a passed decimal number to an hexadecimal number
+ * @param {bigint} num Number to convert to Hexadecimal
+ * @returns Hexadecimal number
+ */
 function ConvertNumToHex(num){
     if(num<=9)
         res = num;
