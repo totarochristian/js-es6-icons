@@ -43,3 +43,14 @@ function ApplyFilters(){
             iconsArray[i].classList.remove("d-none");
     }
 }
+
+function SearchElements(){
+    ApplyFilters();
+    let searchWord = document.getElementById("txtSearch").value;
+    for(let i=0; i<icons.length; i++){
+        if(!iconsArray[i].classList.contains("d-none") && searchWord){
+            if(!icons[i].name.includes(searchWord))
+                iconsArray[i].classList.add("d-none");
+        }
+    }
+}
