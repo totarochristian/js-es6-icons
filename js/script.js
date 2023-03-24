@@ -157,4 +157,4 @@ const icons = [
     }
 ];
 
-window.addEventListener("load",Initialize);
+window.addEventListener("load", Initialize);
