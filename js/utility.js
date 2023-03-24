@@ -1,6 +1,8 @@
 /** Function used to initialize the elements in the main of index page. */
 function Initialize() {
     icons.forEach(function (el) {
+        //Define the card with the el data, add it to the card container
+        //then add the node to an array of card nodes
         iconsArray.push(AddCard(el));
         //Code that will define the categories of the filter select
         if(!filtersCategories.includes(el.type)){
@@ -26,6 +28,8 @@ function AddCard(elem){
     const h6 = document.createElement("h6");
     h6.classList.add("card-title");
     h6.innerText = elem.name;
+    //Append sub elements to father element and then the card to the card
+    //container
     bd.appendChild(h6);
     card.appendChild(h2);
     card.appendChild(bd);
@@ -37,6 +41,9 @@ function AddCard(elem){
 function ApplyFilters(){
     let filterSelected = document.getElementById("selFilter").value;
     for(let i=0; i<icons.length; i++){
+        //If the filter value is selected and the icon type is not the 
+        //selected type, set not visible the card, otherwise, remove 
+        //the d-none class
         if(filterSelected && icons[i].type != filterSelected)
             iconsArray[i].classList.add("d-none");
         else
