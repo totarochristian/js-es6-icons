@@ -28,6 +28,13 @@ function AddCard(elem){
     return card;
 }
 
+/** Function used to apply the selected filter. */
 function ApplyFilters(){
-    console.log("cambio filtri: "+document.getElementById("selFilter").value);
+    let filterSelected = document.getElementById("selFilter").value;
+    for(let i=0; i<icons.length; i++){
+        if(filterSelected && icons[i].type != filterSelected)
+            iconsArray[i].classList.add("d-none");
+        else
+            iconsArray[i].classList.remove("d-none");
+    }
 }
