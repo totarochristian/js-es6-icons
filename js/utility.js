@@ -14,10 +14,10 @@ function AddCard(elem){
     const card = document.createElement("div");
     card.classList.add("card");
     const h2 = document.createElement("h2");
-    h2.classList.add("card-header",elem.prefix+elem.family,elem.prefix+elem.name);
+    h2.classList.add("text-center","card-header",elem.prefix+elem.family,elem.prefix+elem.name);
     h2.style.color = elem.color;
     const bd = document.createElement("div");
-    bd.classList.add("card-body");
+    bd.classList.add("card-body","d-flex","align-items-center","justify-content-center");
     const h6 = document.createElement("h6");
     h6.classList.add("card-title");
     h6.innerText = elem.name;

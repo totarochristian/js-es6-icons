@@ -2,8 +2,22 @@
     --sz-header: 60px;
     --sz-footer: 40px;
     --sz-main: calc(100vh - var(--sz-header) - var(--sz-footer));
+    --card-per-row: 4;
 }
 header{ height: var(--sz-header); }
 footer{ height: var(--sz-footer); }
 main{ height: var(--sz-main); }
 footer>div, main>div{ height: 100%; width: 100%; }
+.card{
+    width: calc(100% / var(--card-per-row) - 2rem);
+    height: calc(100% / var(--card-per-row) - 2rem);
+}
+#cardContainer{
+    overflow-y: auto;
+}
+.card h2{
+    font-size: 4rem;
+}
+.card h6{
+    font-size: 2rem;
+}
