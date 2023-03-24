@@ -71,13 +71,16 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                            <option value="0" selected>Open this select menu</option>
-                            <option value="1">Animal</option>
-                            <option value="2">Vegetable</option>
-                            <option value="3">User</option>
-                        </select>
+                    <form class="d-flex align-items-center gap-3" role="search">
+                        <div class="d-flex text-light align-items-center gap-2 col-5">
+                            <label for="selFilter">Filtri:</label>
+                            <select id="selFilter" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option value="0" selected>Open this select menu</option>
+                                <option value="1">Animal</option>
+                                <option value="2">Vegetable</option>
+                                <option value="3">User</option>
+                            </select>
+                        </div>
                         <input id="txtSearch" class="form-control me-2" type="search" placeholder="Search"
                             aria-label="Search">
                         <button id="btnSearch" class="btn btn-outline-primary" type="submit">Search</button>
