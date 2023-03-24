@@ -182,7 +182,7 @@ let filtersCategories = [];
 window.addEventListener("load", Initialize);
 
 //On change of filter select value, call the ApplyFilters function
-document.getElementById("selFilter").addEventListener("change", ApplyFilters);
+document.getElementById("selFilter").addEventListener("change", SearchElements);
 
 //On click of search button, call the SearchElements function
 document.getElementById("btnSearch").addEventListener("click",SearchElements);
