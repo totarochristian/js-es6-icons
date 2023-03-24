@@ -176,6 +176,8 @@ const icons = [
 /** Array with the card nodes */
 let iconsArray = [];
 
+let filtersCategories = [];
+
 //Call the Initialize function at the load of the window
 window.addEventListener("load", Initialize);
 

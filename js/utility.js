@@ -2,6 +2,11 @@
 function Initialize() {
     icons.forEach(function (el) {
         iconsArray.push(AddCard(el));
+        //Code that will define the categories of the filter select
+        if(!filtersCategories.includes(el.type)){
+            document.getElementById("selFilter").innerHTML += '<option value="'+el.type+'" selected>'+el.typeIT+'</option>';
+            filtersCategories.push(el.type);
+        }
     });
 }
 
