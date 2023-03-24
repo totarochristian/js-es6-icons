@@ -42,6 +42,10 @@ correctly and display the icon on the page?
 ------------------------------------------------------------------------------
 */
 
+const animalColor = GenerateRandomColor();
+const vegetableColor = GenerateRandomColor();
+const userColor = GenerateRandomColor();
+
 /** Array with the cards data */
 const icons = [
     {
@@ -50,7 +54,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'crow',
@@ -58,7 +62,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'dog',
@@ -66,7 +70,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'dove',
@@ -74,7 +78,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'dragon',
@@ -82,7 +86,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'horse',
@@ -90,7 +94,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'hippo',
@@ -98,7 +102,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'fish',
@@ -106,7 +110,7 @@ const icons = [
         type: 'animal',
         typeIT: 'Animali',
         family: 'solid',
-        color: 'orange'
+        color: animalColor
     },
     {
         name: 'carrot',
@@ -114,7 +118,7 @@ const icons = [
         type: 'vegetable',
         typeIT: 'Vegetali',
         family: 'solid',
-        color: 'green'
+        color: vegetableColor
     },
     {
         name: 'apple-alt',
@@ -122,7 +126,7 @@ const icons = [
         type: 'vegetable',
         typeIT: 'Vegetali',
         family: 'solid',
-        color: 'green'
+        color: vegetableColor
     },
     {
         name: 'lemon',
@@ -130,7 +134,7 @@ const icons = [
         type: 'vegetable',
         typeIT: 'Vegetali',
         family: 'solid',
-        color: 'green'
+        color: vegetableColor
     },
     {
         name: 'pepper-hot',
@@ -138,7 +142,7 @@ const icons = [
         type: 'vegetable',
         typeIT: 'Vegetali',
         family: 'solid',
-        color: 'green'
+        color: vegetableColor
     },
     {
         name: 'user-astronaut',
@@ -146,7 +150,7 @@ const icons = [
         type: 'user',
         typeIT: 'Utenti',
         family: 'solid',
-        color: 'blue'
+        color: userColor
     },
     {
         name: 'user-graduate',
@@ -154,7 +158,7 @@ const icons = [
         type: 'user',
         typeIT: 'Utenti',
         family: 'solid',
-        color: 'blue'
+        color: userColor
     },
     {
         name: 'user-ninja',
@@ -162,7 +166,7 @@ const icons = [
         type: 'user',
         typeIT: 'Utenti',
         family: 'solid',
-        color: 'blue'
+        color: userColor
     },
     {
         name: 'user-secret',
@@ -170,7 +174,7 @@ const icons = [
         type: 'user',
         typeIT: 'Utenti',
         family: 'solid',
-        color: 'blue'
+        color: userColor
     }
 ];
 /** Array with the card nodes */
