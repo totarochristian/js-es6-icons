@@ -27,3 +27,7 @@ function AddCard(elem){
     document.getElementById("cardContainer").appendChild(card);
     return card;
 }
+
+function ApplyFilters(){
+    console.log("cambio filtri: "+document.getElementById("selFilter").value);
+}

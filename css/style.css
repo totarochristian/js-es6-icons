@@ -4,9 +4,10 @@
     --sz-main: calc(100vh - var(--sz-header) - var(--sz-footer));
     --card-per-row: 4;
 }
-header{ height: var(--sz-header); }
-footer{ height: var(--sz-footer); }
-main{ height: var(--sz-main); }
+header{ height: var(--sz-header);}
+footer{ height: var(--sz-footer);}
+nav{ z-index: 1000; }
+main{ height: var(--sz-main);}
 footer>div, main>div{ height: 100%; width: 100%; }
 .card{
     width: calc(100% / var(--card-per-row) - 2rem);
@@ -20,4 +21,25 @@ footer>div, main>div{ height: 100%; width: 100%; }
 }
 .card h6{
     font-size: 2rem;
+}
+@media screen and (max-width: 960px){
+    :root{
+        --card-per-row: 3;
+    }
+}
+@media screen and (max-width: 580px){
+    :root{
+        --card-per-row: 2;
+    }
+    .card{
+        max-height: 200px;
+    }
+}
+@media screen and (max-width: 380px){
+    :root{
+        --card-per-row: 1;
+    }
+    .card{
+        max-height: 250px;
+    }
 }
