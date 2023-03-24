@@ -156,3 +156,5 @@ const icons = [
         color: 'blue'
     }
 ];
+
+window.addEventListener("load",Initialize);
