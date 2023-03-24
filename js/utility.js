@@ -10,6 +10,8 @@ function Initialize() {
             filtersCategories.push(el.type);
         }
     });
+    //Force the select of first element of the select
+    document.getElementById("selFilter").querySelector("option").setAttribute("selected","");
 }
 
 /**
@@ -67,4 +69,39 @@ function SearchElements(){
                 iconsArray[i].classList.add("d-none");
         }
     }
+}
+
+function GenerateRandomColor(){
+    let generatedColor = '#';
+    for(let i=0; i<6; i++)
+        generatedColor += ConvertNumToHex(GetRandomInt(15,0));
+    return generatedColor;
+}
+
+/**
+ * Function that will generate a random int
+ * @param {bigint} max Max value of the interval
+ * @param {bigint} min Min value of the interval
+ * @returns {bigint} Generated random int value
+ */
+function GetRandomInt(max,min) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function ConvertNumToHex(num){
+    if(num<=9)
+        res = num;
+    else{
+        switch(num){
+            case 10: res = 'A'; break;
+            case 11: res = 'B'; break;
+            case 12: res = 'C'; break;
+            case 13: res = 'D'; break;
+            case 14: res = 'E'; break;
+            case 15: res = 'F'; break;
+        }
+    }
+    return res;
 }
