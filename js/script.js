@@ -42,6 +42,7 @@ correctly and display the icon on the page?
 ------------------------------------------------------------------------------
 */
 
+/** Array with the cards data */
 const icons = [
     {
         name: 'cat',
@@ -156,5 +157,11 @@ const icons = [
         color: 'blue'
     }
 ];
+/** Array with the card nodes */
 let iconsArray = [];
+
+//Call the Initialize function at the load of the window
 window.addEventListener("load", Initialize);
+
+//On change of filter select value, call the ApplyFilters function
+document.getElementById("selFilter").addEventListener("change", ApplyFilters);
